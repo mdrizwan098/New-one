@@ -1,0 +1,95 @@
+/* style.css */
+
+/* Part 1: Base Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f9ff;
+    color: #333;
+    padding: 30px;
+}
+
+/* Part 2: Form Container Styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Part 3: Form Groups */
+form div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Part 4: Labels */
+form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Part 5: Inputs and Textarea */
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #f0faff;
+}
+
+/* Part 6: Textarea sizing */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Part 7: Button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Part 8: Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
